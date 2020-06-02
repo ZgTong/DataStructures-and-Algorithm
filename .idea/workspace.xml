@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/recursion/Queens8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/sort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/sort/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/sort/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/sort/ShellSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures and Algorithm learning/com/tzg/recursion/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures and Algorithm learning/com/tzg/recursion/Maze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tzg/sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tzg/sort/InsertionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.InsertionSort">
+  <component name="RunManager" selected="Application.ShellSort">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tzg.sort.BubbleSort" />
       <module name="DataStructures and Algorithm learning" />
@@ -64,19 +62,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tzg.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Maze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.recursion.Maze" />
-      <module name="DataStructures and Algorithm learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tzg.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,13 +95,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.sort.ShellSort" />
+      <module name="DataStructures and Algorithm learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tzg.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShellSort" />
         <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.Queens8" />
-        <item itemvalue="Application.Maze" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +151,9 @@
       <workItem from="1590718672761" duration="4586000" />
       <workItem from="1590917899797" duration="1929000" />
       <workItem from="1590978012553" duration="8935000" />
+      <workItem from="1591062192929" duration="3801000" />
+      <workItem from="1591088992072" duration="1771000" />
+      <workItem from="1591113247166" duration="5684000" />
     </task>
     <servers />
   </component>
@@ -160,25 +161,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="718" height="190" key="GridCell.Tab.0.bottom" timestamp="1591000575127">
+    <state x="0" y="71" key="#Notifications" timestamp="1591063662025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="718" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591000575127" />
-    <state width="718" height="190" key="GridCell.Tab.0.center" timestamp="1591000575126">
+    <state x="0" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1591063662025" />
+    <state width="1493" height="258" key="GridCell.Tab.0.bottom" timestamp="1591119340367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="718" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591000575126" />
-    <state width="718" height="190" key="GridCell.Tab.0.left" timestamp="1591000575126">
+    <state width="1493" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state width="1493" height="258" key="GridCell.Tab.0.center" timestamp="1591119340367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="718" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591000575126" />
-    <state width="718" height="190" key="GridCell.Tab.0.right" timestamp="1591000575127">
+    <state width="1493" height="258" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state width="1493" height="258" key="GridCell.Tab.0.left" timestamp="1591119340366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="718" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591000575127" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590979077429">
+    <state width="1493" height="258" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591119340366" />
+    <state width="1493" height="258" key="GridCell.Tab.0.right" timestamp="1591119340367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590979077429" />
+    <state width="1493" height="258" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1591119340367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1591119340367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1591119340367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1591119340367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591119340367" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591064731608">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591064731608" />
   </component>
 </project>

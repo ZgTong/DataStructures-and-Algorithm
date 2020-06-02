@@ -9,20 +9,21 @@ public class InsertionSort {
         System.out.println(Arrays.toString(insertionSortArray));
 
     }
+
     public static void insertionSort(int[] ssa){
         int insertValue = 0;
         int insertIndex = 0;
         for (int i = 1; i < ssa.length; i++) {
-            insertValue = ssa[i];
             insertIndex = i-1;
-            while (insertIndex>=0 && insertValue<ssa[insertIndex]){
+            insertValue = ssa[i];
+            while(insertIndex>=0 && insertValue<ssa[insertIndex]){
                 ssa[insertIndex+1] = ssa[insertIndex];
                 insertIndex--;
             }
-
-            if (insertIndex+1!=i) {
-                ssa[insertIndex + 1] = insertValue;
+            if (insertIndex+1!=i){
+                ssa[insertIndex+1] = insertValue;
             }
+
         }
     }
 }
