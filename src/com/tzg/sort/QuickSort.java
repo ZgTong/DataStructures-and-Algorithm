@@ -27,11 +27,13 @@ public class QuickSort {
             temp = qsa[l];
             qsa[l] = qsa[r];
             qsa[r]= temp;
+
+            //此处是为了处理一边完成有序 ，另一边仍未完成的情况
             if (qsa[l]==pivot){
                 r-=1;
             }
             if (qsa[r]==pivot){
-                r+=1;
+                l+=1;
             }
         }
         if (l == r){
