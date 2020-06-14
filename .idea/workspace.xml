@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/tree/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/huffmanCode/HuffmanCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/huffmanTree/HuffmanTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.HeapSort">
+  <component name="RunManager" selected="Application.HuffmanTree">
     <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tzg.tree.ArrBinaryTreeDemo" />
       <module name="DataStructures and Algorithm learning" />
@@ -67,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.hashTable.HashTable" />
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.tree.HeapSort" />
       <module name="DataStructures and Algorithm learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tzg.hashTable.*" />
+          <option name="PATTERN" value="com.tzg.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.tree.HeapSort" />
+    <configuration name="HuffmanTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.huffmanTree.HuffmanTree" />
       <module name="DataStructures and Algorithm learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tzg.tree.*" />
+          <option name="PATTERN" value="com.tzg.huffmanTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.threadedBinaryTreeDemo" />
         <item itemvalue="Application.ArrBinaryTreeDemo" />
         <item itemvalue="Application.BinaryTreeDemo" />
-        <item itemvalue="Application.HashTable" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +169,7 @@
       <workItem from="1592033288755" duration="731000" />
       <workItem from="1592036447591" duration="5097000" />
       <workItem from="1592061678692" duration="3268000" />
+      <workItem from="1592149990136" duration="2392000" />
     </task>
     <servers />
   </component>
@@ -183,22 +185,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1591063662025" />
-    <state width="1493" height="183" key="GridCell.Tab.0.bottom" timestamp="1592066149363">
+    <state x="190" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1592150321344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592066149363" />
-    <state width="1493" height="183" key="GridCell.Tab.0.center" timestamp="1592066149363">
+    <state x="190" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592150321344" />
+    <state width="723" height="182" key="GridCell.Tab.0.bottom" timestamp="1592152426335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592066149363" />
-    <state width="1493" height="183" key="GridCell.Tab.0.left" timestamp="1592066149363">
+    <state width="723" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592152426335" />
+    <state width="723" height="182" key="GridCell.Tab.0.center" timestamp="1592152426335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592066149363" />
-    <state width="1493" height="183" key="GridCell.Tab.0.right" timestamp="1592066149363">
+    <state width="723" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592152426335" />
+    <state width="723" height="182" key="GridCell.Tab.0.left" timestamp="1592152426335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592066149363" />
+    <state width="723" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592152426335" />
+    <state width="723" height="182" key="GridCell.Tab.0.right" timestamp="1592152426335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592152426335" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1592050784171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
