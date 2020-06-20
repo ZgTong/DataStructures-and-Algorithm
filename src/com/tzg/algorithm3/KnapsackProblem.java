@@ -24,7 +24,7 @@ public class KnapsackProblem {
                 }else {
                     if ( arr[i-1][j] < value[i-1] + arr[i-1][j-weight[i-1]] ) {
                         arr[i][j] = value[i-1] + arr[i-1][j-weight[i-1]];
-                        path[i][j]=1;
+                        path[i][j]=1; //最优解
                     }else{
                         arr[i][j] = arr[i-1][j];
                     }
@@ -39,6 +39,13 @@ public class KnapsackProblem {
             System.out.println();
         }
 
+        for (int i = 0; i < path.length; i++) {
+            for (int j = 0; j < path[i].length; j++) {
+                System.out.print(path[i][j]+" ");
+            }
+            System.out.println();
+        }
+
 
 //        for (int i = 0; i < path.length; i++) {
 //            for (int j = 0; j < path[i].length; j++) {
@@ -48,12 +55,12 @@ public class KnapsackProblem {
 //            }
 //        }
 
-        int i = path.length-1;
-        int j = path[0].length-1;
+        int i = path.length-1; //3
+        int j = path[0].length-1; //4
         while (i>0 && j>0){
             if (path[i][j]==1){
                 System.out.printf("第%d个商品放入到背包\n", i);
-                j-=weight[i-1];
+                j-=weight[i-1]; //??
 
             }
             i--;

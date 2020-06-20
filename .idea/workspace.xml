@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm3/KnapsackProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm4/KMPAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm4/ViolenceMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tzg/algorithm3/KnapsackProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tzg/algorithm3/KnapsackProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tzg/algorithm4/ViolenceMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tzg/algorithm4/ViolenceMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
       <recent name="com.tzg.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KnapsackProblem">
+  <component name="RunManager" selected="Application.ViolenceMatch">
     <configuration name="BinarySearchNoRecursion (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm1.BinarySearchNoRecursion" />
       <module name="DataStructures and Algorithm learning" />
@@ -67,19 +66,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tzg.algorithm.binarySearchNoRecursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.graph.Graph" />
-      <module name="DataStructures and Algorithm learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tzg.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,13 +99,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ViolenceMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm4.ViolenceMatch" />
+      <module name="DataStructures and Algorithm learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tzg.algorithm4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ViolenceMatch" />
         <item itemvalue="Application.KnapsackProblem" />
         <item itemvalue="Application.HanoiTower" />
         <item itemvalue="Application.BinarySearchNoRecursion (1)" />
         <item itemvalue="Application.BinarySearchNoRecursion" />
-        <item itemvalue="Application.Graph" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +181,7 @@
       <workItem from="1592444038942" duration="6410000" />
       <workItem from="1592496312816" duration="2798000" />
       <workItem from="1592654140747" duration="2627000" />
-      <workItem from="1592664106915" duration="3359000" />
+      <workItem from="1592664106915" duration="4460000" />
     </task>
     <servers />
   </component>
@@ -206,22 +205,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="177" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1592497997587" />
-    <state width="738" height="179" key="GridCell.Tab.0.bottom" timestamp="1592667471550">
+    <state width="738" height="179" key="GridCell.Tab.0.bottom" timestamp="1592668404478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592667471550" />
-    <state width="738" height="179" key="GridCell.Tab.0.center" timestamp="1592667471550">
+    <state width="738" height="179" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592668404478" />
+    <state width="738" height="179" key="GridCell.Tab.0.center" timestamp="1592668404478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592667471550" />
-    <state width="738" height="179" key="GridCell.Tab.0.left" timestamp="1592667471549">
+    <state width="738" height="179" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592668404478" />
+    <state width="738" height="179" key="GridCell.Tab.0.left" timestamp="1592668404477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592667471549" />
-    <state width="738" height="179" key="GridCell.Tab.0.right" timestamp="1592667471550">
+    <state width="738" height="179" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592668404477" />
+    <state width="738" height="179" key="GridCell.Tab.0.right" timestamp="1592668404478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592667471550" />
+    <state width="738" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592668404478" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1592050784171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
