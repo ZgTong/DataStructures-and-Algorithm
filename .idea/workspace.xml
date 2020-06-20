@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm1/BinarySearchNoRecursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm2/HanoiTower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm3/KnapsackProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm4/KMPAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm4/ViolenceMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,20 +47,7 @@
       <recent name="com.tzg.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HanoiTower">
-    <configuration name="AvlTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.avl.AvlTreeDemo" />
-      <module name="DataStructures and Algorithm learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tzg.avl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.KnapsackProblem">
     <configuration name="BinarySearchNoRecursion (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm1.BinarySearchNoRecursion" />
       <module name="DataStructures and Algorithm learning" />
@@ -112,13 +100,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KnapsackProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm3.KnapsackProblem" />
+      <module name="DataStructures and Algorithm learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tzg.algorithm3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KnapsackProblem" />
         <item itemvalue="Application.HanoiTower" />
         <item itemvalue="Application.BinarySearchNoRecursion (1)" />
         <item itemvalue="Application.BinarySearchNoRecursion" />
         <item itemvalue="Application.Graph" />
-        <item itemvalue="Application.AvlTreeDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +181,8 @@
       <workItem from="1592360222378" duration="5758000" />
       <workItem from="1592444038942" duration="6410000" />
       <workItem from="1592496312816" duration="2798000" />
+      <workItem from="1592654140747" duration="2627000" />
+      <workItem from="1592664106915" duration="3359000" />
     </task>
     <servers />
   </component>
@@ -203,22 +206,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="177" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1592497997587" />
-    <state width="736" height="179" key="GridCell.Tab.0.bottom" timestamp="1592499113407">
+    <state width="738" height="179" key="GridCell.Tab.0.bottom" timestamp="1592667471550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="736" height="179" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592499113407" />
-    <state width="736" height="179" key="GridCell.Tab.0.center" timestamp="1592499113407">
+    <state width="738" height="179" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592667471550" />
+    <state width="738" height="179" key="GridCell.Tab.0.center" timestamp="1592667471550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="736" height="179" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592499113407" />
-    <state width="736" height="179" key="GridCell.Tab.0.left" timestamp="1592499113407">
+    <state width="738" height="179" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592667471550" />
+    <state width="738" height="179" key="GridCell.Tab.0.left" timestamp="1592667471549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="736" height="179" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592499113407" />
-    <state width="736" height="179" key="GridCell.Tab.0.right" timestamp="1592499113407">
+    <state width="738" height="179" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592667471549" />
+    <state width="738" height="179" key="GridCell.Tab.0.right" timestamp="1592667471550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="736" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592499113407" />
+    <state width="738" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592667471550" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1592050784171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -247,9 +250,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592497414732" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592277229367">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592664258748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592277229367" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592664258748" />
   </component>
 </project>
