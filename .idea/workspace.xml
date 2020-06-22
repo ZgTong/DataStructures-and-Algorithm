@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="">
+    <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="贪心算法">
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm5/GreedyAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tzg/algorithm4/KMPAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tzg/algorithm4/KMPAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +45,13 @@
       <recent name="com.tzg.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KMPAlgorithm">
-    <configuration name="BinarySearchNoRecursion (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm1.BinarySearchNoRecursion" />
+  <component name="RunManager" selected="Application.GreedyAlgorithm">
+    <configuration name="GreedyAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm5.GreedyAlgorithm" />
       <module name="DataStructures and Algorithm learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tzg.algorithm1.*" />
+          <option name="PATTERN" value="com.tzg.algorithm5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GreedyAlgorithm" />
         <item itemvalue="Application.KMPAlgorithm" />
         <item itemvalue="Application.ViolenceMatch" />
         <item itemvalue="Application.KnapsackProblem" />
         <item itemvalue="Application.HanoiTower" />
-        <item itemvalue="Application.BinarySearchNoRecursion (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -182,17 +182,22 @@
       <workItem from="1592654140747" duration="2627000" />
       <workItem from="1592664106915" duration="4644000" />
       <workItem from="1592730188029" duration="1660000" />
+      <workItem from="1592785222304" duration="2290000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="贪心算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="贪心算法" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="46" width="814" height="778" key="#Intentions" timestamp="1592460266232">
+    <state x="0" y="0" width="814" height="824" key="#Intentions" timestamp="1592786083743">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="46" width="814" height="778" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1592460266232" />
+    <state x="0" y="0" width="814" height="824" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1592786083743" />
     <state x="0" y="71" key="#Notifications" timestamp="1591063662025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -205,22 +210,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="177" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1592497997587" />
-    <state width="738" height="179" key="GridCell.Tab.0.bottom" timestamp="1592733429815">
+    <state x="274" y="6" key="CommitChangelistDialog2" timestamp="1592787451282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592733429815" />
-    <state width="738" height="179" key="GridCell.Tab.0.center" timestamp="1592733429814">
+    <state x="274" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592787451282" />
+    <state width="1493" height="179" key="GridCell.Tab.0.bottom" timestamp="1592787536042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592733429814" />
-    <state width="738" height="179" key="GridCell.Tab.0.left" timestamp="1592733429814">
+    <state width="1493" height="179" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592787536042" />
+    <state width="1493" height="179" key="GridCell.Tab.0.center" timestamp="1592787536042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592733429814" />
-    <state width="738" height="179" key="GridCell.Tab.0.right" timestamp="1592733429814">
+    <state width="1493" height="179" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592787536042" />
+    <state width="1493" height="179" key="GridCell.Tab.0.left" timestamp="1592787536042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592733429814" />
+    <state width="1493" height="179" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592787536042" />
+    <state width="1493" height="179" key="GridCell.Tab.0.right" timestamp="1592787536042">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592787536042" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1592050784171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -241,17 +250,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591201801834" />
-    <state x="42" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592460239678">
+    <state x="42" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592786063773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="42" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1592460239678" />
+    <state x="42" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1592786063773" />
     <state x="0" y="0" key="new project wizard" timestamp="1592497414732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592497414732" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592664258748">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592785403918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592664258748" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592785403918" />
   </component>
 </project>
