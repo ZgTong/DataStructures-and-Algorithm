@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227df3d0-b2ad-4d76-92c2-30fefd178376" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm6/Prim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm7/Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tzg/algorithm8/FloydAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,20 @@
       <recent name="com.tzg.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prim">
+  <component name="RunManager" selected="Application.FloydAlgorithm">
+    <configuration name="FloydAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm8.FloydAlgorithm" />
+      <module name="DataStructures and Algorithm learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tzg.algorithm8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GreedyAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm5.GreedyAlgorithm" />
       <module name="DataStructures and Algorithm learning" />
@@ -66,19 +78,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tzg.algorithm4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KnapsackProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.algorithm3.KnapsackProblem" />
-      <module name="DataStructures and Algorithm learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tzg.algorithm3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FloydAlgorithm" />
         <item itemvalue="Application.Prim" />
         <item itemvalue="Application.GreedyAlgorithm" />
         <item itemvalue="Application.KMPAlgorithm" />
         <item itemvalue="Application.ViolenceMatch" />
-        <item itemvalue="Application.KnapsackProblem" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +184,8 @@
       <workItem from="1592730188029" duration="1660000" />
       <workItem from="1592785222304" duration="4205000" />
       <workItem from="1592841837264" duration="1037000" />
-      <workItem from="1592879059328" duration="2981000" />
+      <workItem from="1592879059328" duration="3115000" />
+      <workItem from="1593012015582" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="贪心算法">
       <created>1592787544037</created>
@@ -225,22 +225,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="274" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592787543276" />
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1592809593952">
+    <state width="751" height="177" key="GridCell.Tab.0.bottom" timestamp="1592883005759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592809593952" />
-    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1592809593952">
+    <state width="751" height="177" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592883005759" />
+    <state width="751" height="177" key="GridCell.Tab.0.center" timestamp="1592883005744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592809593952" />
-    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1592809593952">
+    <state width="751" height="177" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592883005744" />
+    <state width="751" height="177" key="GridCell.Tab.0.left" timestamp="1592883005744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592809593952" />
-    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1592809593952">
+    <state width="751" height="177" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592883005744" />
+    <state width="751" height="177" key="GridCell.Tab.0.right" timestamp="1592883005759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592809593952" />
+    <state width="751" height="177" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592883005759" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1592050784171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -269,9 +269,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592497414732" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592785403918">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593012974912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592785403918" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593012974912" />
   </component>
 </project>
