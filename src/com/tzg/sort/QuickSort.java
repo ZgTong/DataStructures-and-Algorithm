@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] quickSortArray = {-9,78,0,23,-567,70, -1,900, 4561};
-        quickSort(quickSortArray,0,quickSortArray.length-1);
+        int[] quickSortArray = {9,78,0,23,567,70, 1,900, 4561};//9
+        quickSortReview(quickSortArray,0,quickSortArray.length-1);
         System.out.println(Arrays.toString(quickSortArray));
     }
 
@@ -20,18 +20,19 @@ public class QuickSort {
         int l = left;
         int r = right;
         int temp = 0;
+        //{9,78,0,23,567,70, 1,900, 4561}
+        //{9,1,0,23,567,70, 78,900, 4561}
         while (l!=r){
-            System.out.println("l="+l+"r="+r);
             while (qsa[r]>=base&&l<r){
-                r--;
+                r--;//6 2
             }
             while (qsa[l]<=base&&l<r){
-                l++;
+                l++;//2 2
             }
             if (l<r){
-                temp = qsa[l];
-                qsa[l]=qsa[r];
-                qsa[r]=temp;
+                temp = qsa[l];//==0 1
+                qsa[l]=qsa[r];//==1 0
+                qsa[r]=temp;//0
             }
         }
         qsa[left]=qsa[l];
@@ -40,43 +41,31 @@ public class QuickSort {
         quickSort(qsa,r+1,right);
     }
 
-    public static void quickSort1(int[] qsa,int left,int right){
+
+    public static void quickSortReview(int[] qsa,int left,int right){
+        if (qsa==null||qsa.length==0|qsa.length==1){ return; }
+        if (left>right){return;}
         int l = left;
         int r = right;
+        int base = qsa[left];
         int temp = 0;
-        int pivot = qsa[(left+right)/2];
-        while(l<r){
-            while ( qsa[l] < pivot ){
-                l+=1;
+        while (l!=r){
+            while (qsa[r]>=base && l<r){
+                r--;
             }
-            while ( qsa[r] > pivot ){
-                r-=1;
+            while (qsa[l]<=base && l<r){
+                l++;
             }
-            if (l>=r){
-                break;
-            }
-            temp = qsa[l];
-            qsa[l] = qsa[r];
-            qsa[r]= temp;
-
-            //此处是为了处理一边完成有序 ，另一边仍未完成的情况
-            if (qsa[l]==pivot){
-                r-=1;
-            }
-            if (qsa[r]==pivot){
-                l+=1;
+            if (l<r){
+                temp = qsa[l];
+                qsa[l] = qsa[r];
+                qsa[r] = temp;
             }
         }
-        if (l == r){
-            l+=1;
-            r-=1;
-        }
-        if (left<r){
-            quickSort(qsa,left,r);
-        }
-        if (right>l){
-            quickSort(qsa,l,right);
-        }
+        qsa[left] = qsa[l];
+        qsa[l]= base;
+        quickSortReview(qsa,left,l-1);
+        quickSortReview(qsa,r+1,right);
     }
 }
 
