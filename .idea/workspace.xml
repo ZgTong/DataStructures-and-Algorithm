@@ -46,9 +46,9 @@
       <recent name="com.tzg.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuickSort">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.sort.BubbleSort" />
+  <component name="RunManager" selected="Application.MergeSort">
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.sort.InsertionSort" />
       <module name="DataStructures and Algorithm learning" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tzg.sort.InsertionSort" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tzg.sort.MergeSort" />
       <module name="DataStructures and Algorithm learning" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.ShellSort" />
         <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +194,7 @@
       <workItem from="1593769927086" duration="631000" />
       <workItem from="1593788421523" duration="2658000" />
       <workItem from="1593871550128" duration="5801000" />
-      <workItem from="1594049579412" duration="1523000" />
+      <workItem from="1594049579412" duration="2435000" />
     </task>
     <task id="LOCAL-00001" summary="贪心算法">
       <created>1592787544037</created>

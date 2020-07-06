@@ -6,7 +6,7 @@ public class MergeSort {
     public static void main(String[] args) {
         int mergeSortArray[] = { 8, 4, 5, 7, 1, 3, 6, 2 };
         int temp[] = new int[mergeSortArray.length];
-        mergeSort(mergeSortArray,0,mergeSortArray.length-1,temp);
+        mergeSortReview(mergeSortArray,0,mergeSortArray.length-1,temp);
         System.out.println(Arrays.toString(mergeSortArray));
     }
 
@@ -46,7 +46,7 @@ public class MergeSort {
 
         while(l<=mid){
             temp[t]= msa[l];
-            l++;  
+            l++;
             t++;
         }
         while(r<=right){
@@ -62,5 +62,53 @@ public class MergeSort {
             t++;
             tempLeft++;
         }
+    }
+
+
+
+    public static void mergeSortReview(int[] msa, int left, int right, int[] temp){
+        if (left<right){
+            int mid = (left+right)/2;
+            mergeSortReview(msa,left,mid,temp);
+            mergeSortReview(msa,mid+1,right,temp);
+            mergeReview(msa,left,mid,right,temp);
+        }
+    }
+
+    public static void mergeReview(int[] msa, int left,int mid , int right,int[] temp){
+        int l = left;
+        int r = mid+1;
+        int t = 0;
+        while (l<=mid&&r<=right){
+            if (msa[l]<msa[r]){
+                temp[t] = msa[l];
+                t++;
+                l++;
+            }else{
+                temp[t] = msa[r];
+                t++;
+                r++;
+            }
+        }
+
+        while (l<=mid){
+            temp[t] = msa[l];
+            t++;
+            l++;
+        }
+        while (r<=right){
+            temp[t] = msa[r];
+            t++;
+            r++;
+        }
+
+        t=0;
+        int tempLeft = left;
+        while (tempLeft<=right){
+            msa[tempLeft] = temp[t];
+            t++;
+            tempLeft++;
+        }
+
     }
 }
