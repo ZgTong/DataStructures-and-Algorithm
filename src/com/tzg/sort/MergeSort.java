@@ -46,7 +46,7 @@ public class MergeSort {
 
         while(l<=mid){
             temp[t]= msa[l];
-            l++;
+            l++;  
             t++;
         }
         while(r<=right){
