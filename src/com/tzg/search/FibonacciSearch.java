@@ -7,7 +7,7 @@ public class FibonacciSearch {
     public static void main(String[] args) {
         //(f[k]-1) = (f[k-1]-1)+(f[k-2]-1)+1
         int[] fibonacciSearchArr={1,8, 10, 89, 1000, 1234};
-        int res = fibonacciSearch(fibonacciSearchArr,1);
+        int res = fibonacciSearchReview(fibonacciSearchArr,1);
         System.out.println("索引为："+res);
     }
 
@@ -24,7 +24,7 @@ public class FibonacciSearch {
     public  static int fibonacciSearch(int[] fsa,int findVal){
         int low = 0;
         int high = fsa.length-1; //5
-        int f[] = fibonacci();
+        int f[] = fibonacci();// [1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765]
         int mid =0;
         int k =0;
 
@@ -52,6 +52,49 @@ public class FibonacciSearch {
                 if (mid<=high){
                     return mid;
                 }else {
+                    return high;
+                }
+            }
+        }
+        return -1;
+    }
+
+    public static  int[] fibonacciReview(){
+        int[] f = new int[maxSize];
+        f[0] = 1;
+        f[1] = 1;
+        for (int i = 2; i < f.length; i++) {
+            f[i]=f[i-1]+f[i-2];
+        }
+        return f;
+    }
+
+    public static int fibonacciSearchReview(int[] fsa, int findVal){
+        int low = 0;
+        int high = fsa.length-1;
+        int mid = 0;
+        int[] f = fibonacciReview();
+        int k = 0; //斐波那契数列下标指针
+        while (high > f[k]-1){
+            k++;
+        }
+        int[] temp = Arrays.copyOf(fsa,f[k]);
+        for (int i = high+1; i < temp.length; i++) {
+            temp[i]=fsa[high];
+        }
+
+        while(low<=high){
+            mid = low+f[k-1]-1;
+            if (findVal<temp[mid]){
+                high = mid-1;
+                k--;
+            }else if (findVal>temp[mid]){
+                low = mid+1;
+                k-=2;
+            }else{
+                if (mid<=high){
+                    return mid;
+                }else{
                     return high;
                 }
             }
