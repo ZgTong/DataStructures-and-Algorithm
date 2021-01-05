@@ -139,8 +139,7 @@ public class SingleLinkedList {
 	public static HeroNode findLastIndexNode(HeroNode head, int index) {
 		if(head.next==null) {
 			return null;
-		}
-		
+		}		
 		int size = getLength(head);
 		if (index<=0||index>size) {
 			return null;
@@ -150,7 +149,6 @@ public class SingleLinkedList {
 			cur = cur.next;
 		}
 		return cur;
-		
 	}
 
 	//方法 获取到单链表的节点的个数（如果是带头结点的链表，需要不统计头结点）

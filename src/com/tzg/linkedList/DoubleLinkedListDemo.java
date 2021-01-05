@@ -103,11 +103,9 @@ class DoubleLinkedList{
 			temp.name = newHeroNode.name;
 			temp.nickname = newHeroNode.nickname;
 		}else {
-			System.out.printf("没有找到编号%d的节点，不能修改\n",newHeroNode.no);;
-			
+			System.out.printf("没有找到编号%d的节点，不能修改\n",newHeroNode.no);			
 		}
 	}
-	
 
 	//删除节点
 	//双向链表可以直接找到要删除的节点
@@ -121,7 +119,7 @@ class DoubleLinkedList{
 		//定义一个辅助变量
 		HeroDoubleNode temp = head.next;//找自己 从第一个，不用找前一个
 		boolean flag = false;
-		while(true) {
+		while(true){
 			if (temp==null) {
 				break; //已经遍历完链表
 			}
@@ -140,7 +138,7 @@ class DoubleLinkedList{
 			}
 			
 		}else {
-			System.out.printf("要删除%d的节点，不存在\n",no);;
+			System.out.printf("要删除%d的节点，不存在\n",no);
 			
 		}
 	}		
