@@ -15,13 +15,15 @@ class ArrBinaryTree{
         this.abt = arr;
     }
 
+    
     public void preOrder(){
         this.preOrder(0);
     }
 
+
     public void preOrder(int index){
         if (abt==null||abt.length==0){
-            System.out.println("数组为空，不能按照二叉树的前序遍历");
+            System.out.println("????????????????????????????");
         }
         System.out.println(abt[index]);
         if ((index*2+1)<abt.length){
