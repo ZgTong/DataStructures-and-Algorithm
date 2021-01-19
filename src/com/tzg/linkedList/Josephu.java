@@ -38,7 +38,6 @@ class CircleSingleLinkedList {
 				curNode = childNode;
 			}
 		}
-
 	}
 
 	/**

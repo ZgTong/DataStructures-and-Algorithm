@@ -2,6 +2,10 @@ package com.tzg.linkedList;
 
 import java.util.Stack;
 
+import javax.sound.sampled.SourceDataLine;
+
+import org.w3c.dom.NameList;
+
 public class SingleLinkedList {
 	public static void main(String[] args) {
 		//测试
@@ -27,11 +31,11 @@ public class SingleLinkedList {
 		sll.update(hero2new);
 		System.out.println("修改后的情况");
 		sll.list();
-//		System.out.println("反转单链表");
-//		reverseList(sll.getHead());
-//		sll.list();
-		System.out.println("逆序打印链表");
-		reversePrint(sll.getHead());
+		System.out.println("反转单链表");
+		reverseList(sll.getHead());
+		sll.list();
+		// System.out.println("逆序打印链表");
+		// reversePrint(sll.getHead());
 		
 		
 //		sll.list();
@@ -59,8 +63,6 @@ public class SingleLinkedList {
 		
 		
 	}
-	
-	
 	//逆序打印单链表 用栈
 	public static void reversePrint(HeroNode head) {
 		if (head.next == null) {
@@ -81,8 +83,7 @@ public class SingleLinkedList {
 		}
 	}
 	
-	
-	//合并两个有序链表
+	//合并两个有序链表 递归
 	public static HeroNode mergeTwoList(HeroNode head1, HeroNode head2) {
 		HeroNode mergeLinkHead = new HeroNode(0, "", ""); 
 		//如果当前链表为空，无需反转直接返回
@@ -106,7 +107,6 @@ public class SingleLinkedList {
 		return mergeHead;
 	}
 	
-	
 	//将链表反转
 	public static void reverseList(HeroNode head) {
 		//如果当前链表为空，或只有一个节点，无需反转直接返回
@@ -114,6 +114,7 @@ public class SingleLinkedList {
 			return;
 		}
 		// 定义一个辅助的变量，帮助我们遍历原来的链表
+		
 		HeroNode cur = head.next;
 		HeroNode next = null; //指向当前节点（cur）的下一个节点
 		HeroNode reverseHead = new HeroNode(0, "", "");
@@ -138,8 +139,7 @@ public class SingleLinkedList {
 	public static HeroNode findLastIndexNode(HeroNode head, int index) {
 		if(head.next==null) {
 			return null;
-		}
-		
+		}		
 		int size = getLength(head);
 		if (index<=0||index>size) {
 			return null;
@@ -149,11 +149,8 @@ public class SingleLinkedList {
 			cur = cur.next;
 		}
 		return cur;
-		
 	}
-	
-	
-	
+
 	//方法 获取到单链表的节点的个数（如果是带头结点的链表，需要不统计头结点）
 	/*
 	 * 
@@ -190,84 +187,68 @@ class SingleLinkedListReal{
 	//当不考虑链表顺序时
 	//找到当前链表最后节点，将next 指向新的节点
 	public void add(HeroNode heroNode) {
-		//因为头结点不能动，因此需要一个辅助遍历
-		HeroNode temp  = head;
-		//遍历链表，找到最后
-		while(true) {
-			//找到链表的最后
-			if(temp.next==null) {
+		HeroNode temp = head;
+		while (true) {
+			if (temp.next == null) {
 				break;
 			}
-			//没有找到将temp后移
 			temp = temp.next;
-		}
-		//当退出循环时，temp就指向链表的最后
-		//将最后这个节点的next指向新的节点
+		}		 
 		temp.next = heroNode;
-		
 	}
 	
 	//当考虑链表顺序时
 	//找到新添加的节点的位置，通过遍历
 	public void addByOrder(HeroNode heroNode) {
-		//因为头结点不能动，因此需要一个辅助遍历
-		//temp是添加位置的前一个节点，否者插入不了
-		HeroNode temp  = head;
-		boolean flag = false; //标志添加的编号是否存在，默认为false
-		//遍历链表，找到最后
-		while(true) {
-			//找到链表的最后
-			if(temp.next==null) {
+		HeroNode temp = head;
+		boolean flag = false;
+		while (true) {
+			if (temp.next == null) {
+				//到最后了，插入到最后
 				break;
 			}
-			if (temp.next.no>heroNode.no) { //位置找到，就在temp的后面插入
+			if (temp.next.no > heroNode.no) {
+				//找到了
 				break;
-			}else if(temp.next.no==heroNode.no) { //编号已经存在
-				flag = true; 
+			} else if(temp.next.no == heroNode.no){
+				flag = true;
 				break;
-				
 			}
-			//没有找到将temp后移
 			temp = temp.next;
 		}
-		//判断flag的值
-		if (flag) { //编号已存在
-			System.out.printf("编号已存在，不能加入\n", heroNode.no);
-		}else {
+		if (flag) {
+			System.out.printf("准备插入的英雄的编号 %d 已经存在了, 不能加入\n", heroNode.no);
+		} else {
+			//插入到链表中, temp的后面
 			heroNode.next = temp.next;
 			temp.next = heroNode;
 		}
-		
-		
+
 	}
 	
 	public void update(HeroNode newHeroNode) {
 		if (head.next == null) {
-			System.out.println("链表为空");
+			System.out.println("链表为空~");
 			return;
 		}
-		
-		//找到需要修改的节点，根据no编号
-		//定义一个辅助变量
 		HeroNode temp = head.next;
-		boolean flag = false;
-		while(true) {
-			if (temp==null) {
-				break; //已经遍历完链表
-			}
-			if (temp.no==newHeroNode.no) {
-				flag = true; //找到了
+		boolean  flag = false;
+		while (true) {
+			if (temp == null) {
 				break;
 			}
-			temp=temp.next;
+			if (temp.no == newHeroNode.no) {
+				//找到了
+				flag = true;
+				break;
+			}
+			temp = temp.next;
 		}
-		//根据flag判断是否找到要修改的节点
 		if (flag) {
 			temp.name = newHeroNode.name;
-			temp.nickname = newHeroNode.nickname;
-		}else {
-			System.out.printf("没有找到编号%d的节点，不能修改\n",newHeroNode.no);;
-			
+			temp.nickName = newHeroNode.nickName;
+		} else { //没有找到
+			System.out.printf("没有找到 编号 %d 的节点，不能修改\n", newHeroNode.no);		
 		}
 	}
 	
@@ -275,45 +256,39 @@ class SingleLinkedListReal{
 	//temp辅助节点找到待删除节点的前一个
 	//比较temp.next.no和需要删除的节点no
 	public void delete(int no) {
-		
-		//找到需要修改的节点，根据no编号
-		//定义一个辅助变量
 		HeroNode temp = head;
-		boolean flag = false;
-		while(true) {
-			if (temp.next==null) {
-				break; //已经遍历完链表
-			}
-			if (temp.next.no==no) {
-				flag = true; //找到了
+		boolean flag = true;
+		while (true) {
+			if (temp.next == null) {
 				break;
 			}
-			temp=temp.next;
+			if (temp.next.no == no) {
+				flag = true;
+				break;
+			}
+			temp = temp.next;
 		}
-		//根据flag判断是否找到要删除的节点
 		if (flag) {
 			temp.next = temp.next.next;
-		}else {
-			System.out.printf("要删除%d的节点，不存在\n",no);
-			
+		} else {
+			System.out.printf("要删除的 %d 节点不存在\n", no);
 		}
 	}	
 	
 	public void list() {
-		//判断链表是否为空
-		if(head.next == null) {
+		if (head.next == null){
 			System.out.println("链表为空");
 			return;
 		}
-		//
-		HeroNode temp  = head.next;
+		HeroNode temp = head.next;
 		while(true) {
-			if(temp==null) {
+			//判断是否到链表最后
+			if(temp == null) {
 				break;
 			}
-			//输出节点信息
+			//输出节点的信息
 			System.out.println(temp);
-			//temp 后移
+			//将temp后移， 一定小心
 			temp = temp.next;
 		}
 	}
@@ -323,17 +298,15 @@ class SingleLinkedListReal{
 class HeroNode{
 	public int no;
 	public String name;
-	public String nickname;
+	public String nickName;
 	public HeroNode next;
-	public HeroNode(int hNo, String hName, String hNickname) {
-		this.no = hNo;
-		this.name = hName;
-		this.nickname = hNickname;
+	public HeroNode(int no, String name, String nickName) {
+		this.no = no;
+		this.name = name;
+		this.nickName = nickName;
 	}
-	
 	@Override
 	public String toString() {
-		return "HeroNode [no=" + no +", name="+ name+ ", nickName="+nickname;
+		return "HeroNode [no=" + no + ", name=" + name + ", nickname=" + nickName + "]";
 	}
-	
 }

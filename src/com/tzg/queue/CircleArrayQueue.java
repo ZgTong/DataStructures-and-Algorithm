@@ -65,8 +65,6 @@ class CircleArray {
 	public CircleArray(int arrMaxSize) {
 		maxSize = arrMaxSize;
 		arr = new int[maxSize]; 
-		front = 0;
-		rear = 0;
 	}
 	
 	//判断队列是否已满
@@ -120,7 +118,7 @@ class CircleArray {
 	}
 	//求出当前数列有效数据的个数
 	public int size() {
-		return (rear+maxSize-front)%maxSize;
+		return (rear + maxSize - front) % maxSize;
 	}
 	
 	
@@ -129,7 +127,6 @@ class CircleArray {
 		if (isEmpty()) {
 			throw new RuntimeException("数列为空");
 		}
-		
 		return arr[front];
 	}	
 }
